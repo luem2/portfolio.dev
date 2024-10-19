@@ -1,7 +1,7 @@
-# 👨🏻‍💻 Porfolio para programadores y desarrolladores
+# 👨🏻‍💻 Portfolio para programadores y desarrolladores
 
 <div align="center">
-<a href="https://porfolio.dev/">
+<a href="https://pinol.dev/">
 <img src="./public/porfolio.webp">
 </a>
 <p></p>

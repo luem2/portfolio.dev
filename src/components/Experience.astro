@@ -1,30 +1,37 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
+import ExperienceItem from './ExperienceItem.astro'
 const EXPERIENCE = [
-  {
-    date: "Actualmente...",
-    title: "Creador de Contenido",
-    company: "Twitch",
-    description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-    link: "https://twitch.tv/midudev",
-  },
-  {
-    date: "Septiembre 2022",
-    title: "Principal Frontend Engineer",
-    company: "Adevinta Spain",
-    description:
-      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
-  },
+	{
+		date: 'Febrero 2024 - Actualmente',
+		title: 'Database Administrator',
+		company: 'Collins S.A',
+		description:
+			'1) ● Diseño y optimización de procedimientos almacenados en SQL Server, mejorando la eficiencia y reduciendo tiempos de ejecución en sistemas de alto volumen de datos. 2) ● Diseño, creación y normalización de tablas para garantizar la integridad de datos y optimizar el rendimiento de las consultas. 3) ● Implementación de planes de mantenimiento automatizados, incluyendo copias de seguridad diarias, gestión de versiones de objetos de base de datos como procedimientos almacenados, tablas y tipos de datos. 4) ● Migración de datos desde tablas DBF a SQL Server con enfoque en mantener la integridad referencial y realizar sanitización de datos para asegurar la calidad y consistencia.',
+		link: 'https://linkedin.com/in/lucianopinol',
+	},
+	{
+		date: 'Septiembre 2023 - Febrero 2024',
+		title: 'Software Developer',
+		company: 'Blipconnection',
+		description:
+			'1) ● Optimizar y perfeccionar aplicación de rastreo GPS. 2) ● Desarrollo de solución inteligente y automatizada para la detección de camiones de carga, pesaje y registro de la información. 3) ● Diseñar un panel con métricas en tiempo real, sobre la posición del camión, peso, patentes detectadas y formulario de carta de porte. 4) ● Integración con API y registro en base de datos no relacional.',
+	},
+	{
+		date: 'Julio 2023 - Agosto 2023',
+		title: 'Backend Developer',
+		company: 'Blipconnection',
+		description:
+			'1) ● Decodificar rastreadores GPS para habilitar la conectividad y la adquisición de datos en tiempo real. 2) ● Diseñar servidores en Python utilizando sockets y threads para establecer la comunicación de manera eficiente entre los rastreadores y nuestra infraestructura. 3) ● Creación de BOT de whatsapp, para enviar en tiempo real al usuario las ubicaciones gps de los rastreadores, información del mismo, como batería, geocercas creadas, estados de alarma. Implementación de funcionalidad alerta SOS. 4) ● Automatización de servicios con scripting en bash. 5) ● Despliegue de servicios.',
+	},
 ]
 ---
 
 <ol class="relative mt-16">
-  {
-    EXPERIENCE.map((experience) => (
-      <li class="">
-        <ExperienceItem {...experience} />
-      </li>
-    ))
-  }
+	{
+		EXPERIENCE.map((experience) => (
+			<li class="">
+				<ExperienceItem {...experience} />
+			</li>
+		))
+	}
 </ol>
