@@ -5,10 +5,17 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        ports:
-            - 4321:4321
+        env_file: .env
         networks:
             - proxy_network
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.portfolio.rule=Host(`${PUBLIC_DOMAIN}`)"
+            - "traefik.http.routers.portfolio.entrypoints=websecure"
+            - "traefik.http.routers.portfolio.tls=true"
+
+            - "traefik.http.services.portfolio.loadbalancer.server.scheme=http"
+            - "traefik.http.services.portfolio.loadbalancer.server.port=4321"
 networks:
     proxy_network:
         external: true
