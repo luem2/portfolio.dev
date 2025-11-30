@@ -10,7 +10,7 @@ services:
             - proxy_network
         labels:
             - "traefik.enable=true"
-            - "traefik.http.routers.portfolio.rule=Host(`${PUBLIC_DOMAIN}`)"
+            - "traefik.http.routers.portfolio.rule=Host(`${PINOCLOUD_PUBLIC}`)"
             - "traefik.http.routers.portfolio.entrypoints=websecure"
             - "traefik.http.routers.portfolio.tls=true"
 
